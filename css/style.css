@@ -1,0 +1,554 @@
+/* Tipografía Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------- Estructura base ----------------- */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ----------------- HEADER ----------------- */
+header {
+  background-color: #fefefe;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  width: 180px;
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #9D2131;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+
+/* ----------------- BANNER ----------------- */
+.banner {
+  height: 500px;
+  background-image: url(../img/banner-herz.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.banner h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* ----------------- TITULOS ----------------- */
+h2 {
+  font-size: 30px;
+  color: #9D2131;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* ----------------- PRODUCTOS ----------------- */
+.productos {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.producto {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+
+
+}
+
+.producto:hover {
+  transform: scale(1.02);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #efeeee;
+  color: #9D2131;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #d3d3d3;
+}
+/* ----------------- COMBO ----------------- */
+.combo-container {
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    background-color: #f9f9f9;
+  }
+  
+  .combo {
+    background-color: #fafafa;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .combo:hover {
+    transform: scale(1.02);
+  }
+  
+  .combo img {
+    width: 100%;
+    height: auto;
+  }  
+  
+/* ----------------- NEWSLETTER ----------------- */
+.newsletter {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+  height: auto;
+}
+
+.newsletter h2 {
+  color: #fefefe;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.newsletter label {
+  color: #efeeee;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+
+.newsletter input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #9D2131;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------- FOOTER ----------------- */
+footer {
+  background-color: #efeeee;
+  padding: 30px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-content h3 {
+  color: #9D2131;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  color: #000;
+  font-size: 15px;
+}
+
+.footer-content a img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+/* Banner secciones */
+.banner-secciones {
+  background-color: #9D2131;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  }
+  
+.banner-secciones h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #efeeee;
+  }
+  
+  .banner-secciones p {
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  /* ----------------- HOMBRES ----------------- */
+  /* ----- Filtros ------ */
+.filtros {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  }
+  
+.filtros h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  }
+  
+  .opciones-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+.opciones-filtro button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  }
+  
+.opciones-filtro button:hover {
+  background-color: #9D2131;
+  color: #fff;
+  }
+  
+/* ------ Banner intermedio ------ */
+
+.banner-intermedio {
+ text-align: center;
+ padding: 40px 20px;
+ margin: 40px 0;
+border-radius: 8px;
+  }
+  
+  .banner-intermedio h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .banner-intermedio p {
+    font-style: italic;
+  }
+  
+  /* ------ Productos ------  */
+  .producto-hombre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+  }
+  
+  .producto {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .producto:hover {
+    transform: scale(1.03);
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .producto h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .producto p {
+    font-weight: bold;
+    color: #000;
+    margin: 8px 0;
+  }
+  
+  .producto button {
+    background-color: #9D2131;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .producto button:hover {
+    background-color: #7c1a28;
+  }
+  
+  
+/* ---- GALERÍA ---- */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px;
+  }
+
+  /* ----------------- COMPRA ----------------- */
+  .acerca {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .acerca-titulo {
+    flex: 1 1 300px;
+    font-size: 38px;
+    line-height: 1.2;
+  }
+  
+  .acerca-texto {
+    flex: 2 1 500px;
+    color: #000000;
+    padding: 40px;
+  }
+  
+  .acerca-texto p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .mision {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    min-height: 500px;
+    gap: 20px;
+  }
+  
+  .mision-img {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+  
+  .mision-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  
+  /* Responsivos */
+  @media (max-width: 768px) {
+    .acerca {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .acerca-titulo h2 {
+      font-size: 24px; 
+    }
+  
+    .acerca-texto {
+      font-size: 1rem;
+      padding: 20px; 
+    }
+  
+    .mision {
+      flex-direction: column;
+      justify-content: center; 
+    }
+  
+    .mision-img {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .mision-img img {
+      height: auto;
+    }
+  }
+ /* ----------------- BLOG ----------------- */
+  .blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+  }
+  
+  .blog-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 340px;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blog-content {
+    padding: 24px;
+  }
+  
+  .blog-date {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .blog-content h3 {
+    font-size: 18px;
+    margin: 8px 0px 16px;
+    font-weight: bold;
+    color: #212529;
+  }
+  
+  .blog-text {
+    font-size: 15px;
+    color: #495057;
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
+  
+  .blog-link {
+    color: #7c1a28;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .blog-link:hover {
+    color: #7c1a28;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .blog-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* ----------------- carrito ----------------- */
+.boton {
+ display: inline-block;
+    padding: 10px 20px;
+    background-color: #efeeee;
+    color: #7c1a28; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 5px; /
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+
+.boton:hover {
+    background-color: #d2d2d2; 
+    transform: translateY(-3px); 
+}
+
+.boton:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
