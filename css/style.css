@@ -48,7 +48,32 @@ header {
   font-size: 15px;
 }
 
+/* Icono hamburguesa base */
 
+.menu-toggle {
+  display: none;
+}
+.hamburguesa {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.hamburguesa span {
+  display: block;
+  height: 3px;
+  background-color: #9D2131;
+  border-radius: 2px;
+}
+
+/* Desktop */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
 
 /* ----------------- BANNER ----------------- */
 .banner {
@@ -551,4 +576,70 @@ border-radius: 8px;
 .boton:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* ----------------- responsives ----------------- */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .logo {
+    width: 140px;
+    height: auto;
+  }
+
+  .productos, .combo-container, .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto, .combo, .blog-card {
+    width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+/* Menú hamburguesa */
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fefefe;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+
+  .hamburguesa {
+    display: flex;
+  }
+
+  /* Mostrar menú cuando checkbox está checked */
+  .menu-toggle:checked + .hamburguesa + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
 }
