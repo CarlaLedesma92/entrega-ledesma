@@ -1,0 +1,53 @@
+//* Header
+header {
+    background-color: $secondary-color;
+    padding: 20px 0;
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+  
+      .logo {
+        width: 180px;
+        height: 100px;
+      }
+  
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+  
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+  
+      .menu-toggle {
+        display: none;
+      }
+  
+      .hamburguesa {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        width: 25px;
+        height: 20px;
+        justify-content: space-between;
+  
+        span {
+          display: block;
+          height: 3px;
+          background-color: $primary-color;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+  

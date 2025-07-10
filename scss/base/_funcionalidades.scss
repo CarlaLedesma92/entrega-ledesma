@@ -1,0 +1,19 @@
+//* Variables generales
+$primary-color: #9D2131;
+$secondary-color: #fefefe;
+$background-color: #f9f9f9;
+$text-color: #333;
+$button-hover-color: #d3d3d3;
+$button-bg-color: #efeeee;
+$input-border-color: #ccc;
+$font-family: 'Montserrat', sans-serif;
+
+// Import de fuente
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
